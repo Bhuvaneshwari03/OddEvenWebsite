@@ -138,6 +138,15 @@
             }
 
             resultDiv.style.display = 'block';
+
+            // Clear the input field
+            numberInput.value = '';
+
+            // Hide the result after 2 seconds
+            setTimeout(() => {
+                resultDiv.style.display = 'none';
+                resultDiv.textContent = '';
+            }, 2000);
         }
 
         // Allow Enter key to trigger the check
